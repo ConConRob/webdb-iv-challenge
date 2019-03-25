@@ -5,7 +5,8 @@ module.exports = {
     client: "sqlite3",
     connection: {
       filename: "./data/recipeBook.sqlite3"
-    }
+    },
+    useNullAsDefault: true
   },
   migrations: {
     tableName: 'knex_migrations',
@@ -14,5 +15,6 @@ module.exports = {
   seeds: {
     directory: './data/seeds'
   },
-  useNullAsDefault: true
+  
+  
 };

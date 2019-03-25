@@ -6,17 +6,17 @@ exports.up = function(knex, Promise) {
       .notNullable()
       .references("id")
       .inTable("recipes")
-      .onDelete('CASCADE');
+      .onDelete("CASCADE");
 
     table
       .integer("ingredient_id")
       .notNullable()
       .references("id")
       .inTable("ingredients")
-      .onDelete('CASCADE');
+      .onDelete("CASCADE");
   });
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists("recipeToIngredients")
+  return knex.schema.dropTableIfExists("recipeToIngredients");
 };

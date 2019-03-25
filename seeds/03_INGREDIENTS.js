@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
         { id: 5, name: " 150g of ham" },
         { id: 6, name: " 2 cups of water" },
         { id: 7, name: " 1 bell pepper" },
-        { id: 8, name: " 3 buns" },
+        { id: 8, name: " 3 buns" }
       ]);
     });
 };
